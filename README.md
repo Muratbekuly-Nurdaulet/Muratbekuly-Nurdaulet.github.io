@@ -7,3 +7,4 @@ tornado
 
 https://muratbekuly-nurdaulet.github.io/html/blogs
 /festival.html
+festival
