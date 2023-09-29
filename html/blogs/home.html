@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/w3images/parallax1.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>I love volleyball</em></p>
+  <p> Volleyball is a team sport in which two teams of six players are separated by a net. Each team tries to score points by grounding a ball on the other team's court under organized rules.[1] It has been a part of the official program of the Summer Olympic Games since Tokyo 1964. Beach volleyball was introduced to the programme at the Atlanta 1996 Summer Olympics. The adapted version of volleyball at the Summer Paralympic Games is sitting volleyball.
+
+    The complete set of rules is extensive,[2] but play essentially proceeds as follows: a player on one of the teams begins a 'rally' by serving the ball (tossing or releasing it and then hitting it with a hand or arm), from behind the back boundary line of the court, over the net, and into the receiving team's court.[3] The receiving team must not let the ball be grounded within their court. The team may touch the ball up to three times to return the ball to the other side of the court, but individual players may not touch the ball twice consecutively.[3] Typically, the first two touches are used to set up for an attack. An attack is an attempt to direct the ball back over the net in such a way that the team receiving the ball is unable to pass the ball and continue the rally, thus, losing the point. The team that wins the rally is awarded a point and serves the ball to start the next rally. A few of the most common faults include:
+    
+    causing the ball to touch the ground or floor outside the opponents' court or without first passing over the net;
+    catching and throwing the ball;
+    double hit: two consecutive contacts with the ball made by the same player;
+    four consecutive contacts with the ball made by the same team;
+    net foul: touching the net during play;
+    foot fault: the foot crosses over the boundary line when serving or under the net when a front row player is trying to keep the ball in play.
+    The ball is usually played with the hands or arms, but players can legally strike or push (short contact) the ball with any part of the body.
+    
+    A number of consistent techniques have evolved in volleyball, including spiking and blocking (because these plays are made above the top of the net, the vertical jump is an athletic skill emphasized in the sport) as well as passing, setting, specialized player positions, and offensive and defensive structures.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>My Name is Nurdaulet</b></p><br>
+      <img src="data:image/jpeg;base64,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" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Web</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>HTML</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Volleyball</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">14+</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">55+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    VOLLEYBALL
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+
+ 
+ 
+
+
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE I STUDY</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> TARAZ,JIHC<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +77766415190<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: MURATBEKULYNURDAULET@gmail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
